@@ -11,8 +11,8 @@ module.exports = {
     path: path.resolve(__dirname, './dist/lib'),
     library:'yCoffee',//全局变量使用yCoffee
     libraryTarget:'umd',// 使用umd格式 兼容两种 common.js和amd
-    filename: '[name].[hash].js', // 加上hash 并且做了code splitting 那么就可以做浏览器缓存了
-    chunkFilename: '[name].[hash].js',
+    filename: '[name].js', // 加上[hash] 并且做了code splitting 那么就可以做浏览器缓存了
+    chunkFilename: '[name].js',
   },
   plugins: [
     new CheckerPlugin(),
