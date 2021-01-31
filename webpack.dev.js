@@ -7,7 +7,6 @@ module.exports = Object.assign({}, base, {
     example: './example.tsx',
   },
   plugins: [...base.plugins, new HtmlWebpackPlugin({
-    title: 'YCoffee - React',
     template: 'index.html'
   })],
 });
