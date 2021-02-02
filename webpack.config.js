@@ -1,6 +1,8 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const {CheckerPlugin} = require('awesome-typescript-loader')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
   mode:'production',
@@ -15,11 +17,15 @@ module.exports = {
     chunkFilename: '[name].js',
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: 'index.html'
+    }),
     new CheckerPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
     })
+
   ],
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
