@@ -4,7 +4,6 @@ import { Icon } from "./components/index";
 function App() {
   return (
     <div className={styles.App}>
-      123123
       <Icon name="wechat" />
     </div>
   );

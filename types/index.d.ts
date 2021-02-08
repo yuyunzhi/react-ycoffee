@@ -2,6 +2,7 @@ declare module "*.svg" {
   const content: any;
   export default content;
 }
+
 declare module "*.md" {
   const content: any;
   export default content;
@@ -25,13 +26,3 @@ type RequireOnlyOne<T, Keys extends keyof T = keyof T> = Pick<
   }[Keys];
 
 type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
-
-declare module "*.css" {
-  const classes: { readonly [key: string]: string };
-  export default classes;
-}
-
-declare module "*.less" {
-  const classes: { readonly [key: string]: string };
-  export default classes;
-}
