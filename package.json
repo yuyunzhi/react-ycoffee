@@ -2,7 +2,8 @@
   "name": "react-hooks-ui",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/index.tsx",
+  "main": "lib/index",
+  "types": "dist/lib/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config ./build/webpack.dev.js",

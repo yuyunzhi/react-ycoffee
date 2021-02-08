@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "dist", // 把d.ts打包到dist 目录
     "declaration": true,
     "baseUrl": ".",
     "module": "esnext",

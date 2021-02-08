@@ -1,8 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Button from './Button'
+import Button from "./Button";
 
-ReactDOM.render(<Button/>,document.body)
+const a = 1;
 
-console.log(ReactDOM)
-console.log(React)
+export { Button, a };
