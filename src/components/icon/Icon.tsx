@@ -1,16 +1,18 @@
 import React, { FC } from "react";
 import "src/assets/icons/wechat.svg";
 import "./exportAllIcons"; // 动态引入文件
+import styles from "./icon.scss";
 
-interface IconProps {
+interface IconProps extends React.HTMLAttributes<HTMLElement> {
   type: string;
 }
 
 const Icon: FC<IconProps> = (props) => {
+  const { type, ...rest } = props;
   return (
-    <span>
+    <span className={styles["yCoffee-icon"]} {...rest}>
       <svg>
-        <use xlinkHref={`#${props.type}`} />
+        <use xlinkHref={`#${type}`} />
       </svg>
     </span>
   );

@@ -1,0 +1,25 @@
+
+.yCoffee-icon {
+    width: 1.1em;
+    height: 1.1em;
+    color: inherit;
+    fill: currentColor;
+
+    &-wrapper {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 .2em;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+
+    &-loading {
+    }
+}
