@@ -1,16 +1,14 @@
 import React, { FC } from "react";
-import wechat from "src/assets/icons/wechat.svg";
-
-console.log("wechat", wechat);
+import "src/assets/icons/wechat.svg";
 
 interface IconProps {
-  name: string;
+  type: string;
 }
 const Icon: FC<IconProps> = (props) => {
   return (
     <span>
       <svg>
-        <use xlinkHref="#wehcat" />
+        <use xlinkHref={`#wechat`} />
       </svg>
     </span>
   );
