@@ -31,7 +31,8 @@
     "noUnusedLocals": false
   },
   "include": [
-    "./src/**/*.test.tsx"
+    "./src/**/*.test.tsx",
+    "./types/custom.d.ts"
   ],
   "exclude": [
     "node_modules",

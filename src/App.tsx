@@ -1,12 +1,11 @@
 import React from "react";
-import "./App.css";
-
+import styles from "./App.less";
+import { Icon } from "./components/index";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>learn react1111</p>
-      </header>
+    <div className={styles.App}>
+      123123
+      <Icon />
     </div>
   );
 }
