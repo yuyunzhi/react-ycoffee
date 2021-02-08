@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "outDir": "dist", // 把d.ts打包到dist 目录
+    "outDir": "dist",
     "declaration": true,
     "baseUrl": ".",
     "module": "esnext",
     "target": "es5",
-    "lib": ["es6", "dom"],
+    "lib": [
+      "es6",
+      "dom"
+    ],
     "sourceMap": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "moduleResolution": "node",
     "rootDir": ".",
     "forceConsistentCasingInFileNames": true,
@@ -17,9 +20,19 @@
     "importHelpers": true,
     "strictNullChecks": true,
     "allowSyntheticDefaultImports": true,
-    "noUnusedLocals": true
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noUnusedLocals": false
   },
-  "include": [],
+  "include": [
+    "./src/**/*.test.tsx"
+  ],
   "exclude": [
     "node_modules",
     "build",
