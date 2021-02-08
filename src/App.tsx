@@ -5,7 +5,7 @@ function App() {
   return (
     <div className={styles.App}>
       123123
-      <Icon />
+      <Icon name="wechat" />
     </div>
   );
 }
