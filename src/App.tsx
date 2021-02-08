@@ -5,6 +5,9 @@ function App() {
   return (
     <div className={styles.App}>
       <Icon type="wechat" />
+      <Icon type="alipay" />
+      <Icon type="left" />
+      <Icon type="right" />
     </div>
   );
 }
